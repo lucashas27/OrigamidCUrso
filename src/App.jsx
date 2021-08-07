@@ -7,11 +7,10 @@ const lucas = {
     compras: [
         { nome: 'Chocolate', preco: 'R$ 20'},
         { nome: 'Geladeira', preco: 'R$ 2200'},
-        { nome: 'Smartphone', preco: 'R$ 11200'}
+        { nome: 'Smartphone', preco: 'R$ 1200'}
     ],
     ativa: true,
 };
-
 
 function App() {
 const dados = lucas;

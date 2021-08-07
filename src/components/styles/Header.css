@@ -1,0 +1,16 @@
+#header {
+    height: 6vh;
+    background-color: rgb(1, 106, 148);
+    color: white;
+}
+
+li {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 4vw;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}

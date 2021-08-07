@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App.jsx';
+import InputPesquisa from './BatalhaPokemon/InputPesquisa'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <InputPesquisa />
   </React.StrictMode>,
   document.getElementById('root')
 );

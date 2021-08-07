@@ -1,0 +1,14 @@
+.container, .header {
+    text-align: center;
+    width: 100%;
+}
+  
+  .interno  {
+    display: inline-block;
+    background-color: white;
+    
+  }
+img {
+    width: 400px;
+    height: 320px;
+}
