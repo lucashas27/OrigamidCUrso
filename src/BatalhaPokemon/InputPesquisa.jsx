@@ -4,12 +4,7 @@ import Header from '../components/Header'
 
 const InputPesquisa = () => {
 
-  const [chosenPoke, setChosenPoke] = React.useState('')
   const [input, setInput] = React.useState('')
-
-  function savePokemon() {
-    setChosenPoke([input])
-  }
 
   let pokeChosen = localStorage.getItem('pokeEscolhido')
 
@@ -17,7 +12,6 @@ const InputPesquisa = () => {
    if (pokeChosen !== undefined) localStorage.setItem('pokeEscolhido', input)
    }, [input, pokeChosen])
  
-
     return (
       <div>
         <Header />
@@ -26,8 +20,7 @@ const InputPesquisa = () => {
           value={input}
           onChange={({ target }) => setInput(target.value)} 
         />
-        <button type="submit" onClick={savePokemon}>Guardar Pokemon</button>
-        <Home dataPoke={pokeChosen} />
+        <Home dataPoke={input} />
       </div>
     )
 }
