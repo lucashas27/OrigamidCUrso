@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react'
-import CardPokemon from './CardPokemon'
-import './Card.css'
+import React from 'react'
+import Pokedex from './Pokedex'
+
+import './Pokedex.css'
+import InputPesquisa from './InputPesquisa'
 
 const Home = ({dataPoke}) => {
 
@@ -16,12 +18,10 @@ const Home = ({dataPoke}) => {
 
   return (
   <>
-    <div className="container">
       <div className="centralCard">
         <button onClick={handleClick}>GERAR</button>
-        {dados && <CardPokemon nomePoke={dados}/>}
-      </div>
-    </div>
+      </div>        
+      <Pokedex dadosPoke={dados} />
   </>
   )
 }

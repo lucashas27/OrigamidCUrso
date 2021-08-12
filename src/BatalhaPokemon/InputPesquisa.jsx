@@ -1,6 +1,8 @@
 import React from 'react'
 import Home from './Home.jsx'
 import Header from '../components/Header'
+import './Pokedex.css'
+
 
 const InputPesquisa = () => {
 

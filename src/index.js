@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import InputPesquisa from './BatalhaPokemon/InputPesquisa'
+import Produto from './useContext/Produto'
+import { StorageGlobal } from './useContext/StorageGlobal'
 
 ReactDOM.render(
   <React.StrictMode>
-  <InputPesquisa />
+    <StorageGlobal>
+      <Produto />
+    </StorageGlobal>
   </React.StrictMode>,
   document.getElementById('root')
 );
