@@ -1,0 +1,40 @@
+#header {
+  height: 6vh;
+  background-color: rgb(1, 106, 148);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navBar ul {
+  padding:0px;
+  margin:0px;
+  list-style:none;
+  float: right;
+}
+
+.navBar li {
+  display: inline;
+}
+
+.navBar a {
+  padding: 2px 10px;
+  display: inline-block;
+  align-items: right;
+  background-color:#EDEDED;
+  color: #333;
+  text-decoration: none;
+  border-bottom:3px solid #EDEDED;
+}
+
+.navBar a:hover {
+  background-color:#D6D6D6;
+  color: white;
+  border-bottom:3px solid #EA0000;
+}
+
+.active { 
+  color: blue;
+}
+

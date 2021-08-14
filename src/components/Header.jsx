@@ -1,24 +1,20 @@
 import React from 'react';
-import '../Promessa.css'
-import '../components/styles/Header.css'
+import styles from '../components/styles/HeaderStyles.module.css'
+import { NavLink } from 'react-router-dom'
 
-const Header = (props) => {
+const Header = () => {
 
-   return ( 
-    <div id="header">
-
-<li>
-    <ul>
-       <a href="/" alt="sobre">{props.text}</a> 
-    </ul>
-    <ul>
-       <a href="/">entrar</a> 
-    </ul>
-    <ul>
-       <a href="/">lista de pokes</a> 
-    </ul>
-</li>
-   </div>
+  return ( 
+    <div id={styles.header}>
+      <div className={styles.navBar}>
+          <ul>
+            <li> <NavLink to="/sobre">sobre</NavLink> </li>
+            <li> <NavLink to="/effect">Desafio useEffect</NavLink> </li>
+            <li> <NavLink to="/state">Desafio useState</NavLink> </li>
+            <li> <NavLink to="/batalha-pokemon">Batalha Pokemon</NavLink> </li>
+          </ul>
+      </div>
+    </div>
    )
 }
 

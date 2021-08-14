@@ -17,7 +17,7 @@ const HomeEffect = () => {
 
   useEffect(() => {
     const produtoLocal = window.localStorage.getItem('produto');
-    if (produtoLocal !== null) localStorage.setItem('produto', produto.nome)
+    if (produtoLocal !== null) localStorage.setItem('produto', produto?.nome)
   }, []);
 
 
