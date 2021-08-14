@@ -1,10 +1,8 @@
 import React from 'react'
 import Pokedex from './Pokedex'
-
 import './Pokedex.css'
-import InputPesquisa from './InputPesquisa'
 
-const Home = ({dataPoke}) => {
+const HomePokemon = ({dataPoke}) => {
 
   const [dados, setDados] = React.useState('') 
 
@@ -26,4 +24,4 @@ const Home = ({dataPoke}) => {
   )
 }
 
-export default Home
+export default HomePokemon

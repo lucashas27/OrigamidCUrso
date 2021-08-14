@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Produtos from './DesafioComponentes/Produtos'
 import HomeProdutos from './DesafiosUseState/HomeProdutos'
 import HomeEffect from './DesafioUseEffect/HomeEffect'
+import HomePokemon from './BatalhaPokemon/HomePokemon.jsx'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <StorageGlobal>
         <Header />
           <Routes>
+            <Route path="batalha-pokemon" element={<HomePokemon />} />
             <Route path="effect" element={<HomeEffect />} />
             <Route path="state" element={<HomeProdutos />} />
             <Route path="componentes" element={<Produtos />} />
