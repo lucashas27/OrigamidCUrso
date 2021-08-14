@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import ProdutoFetch from './ProdutoFetch'
 
-const Home = () => {
+const HomeEffect = () => {
 
   const [produto, setProdutos] = React.useState(null)
 
@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     const produtoLocal = window.localStorage.getItem('produto');
-    if (produtoLocal !== 'null') localStorage.setItem('produto', produto.nome)
+    if (produtoLocal !== null) localStorage.setItem('produto', produto.nome)
   }, []);
 
 
@@ -38,4 +38,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default HomeEffect

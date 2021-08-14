@@ -3,8 +3,8 @@ import React from 'react'
 const ProdutoFetch = ({dados, storage}) => {
     return (
         <div>
-            {dados?.nome}
-            <p>{dados?.descricao}</p>
+            {dados && dados?.nome}
+            <p>{dados && dados?.descricao}</p>
 
             
         </div>
