@@ -9,6 +9,7 @@ import HomeProdutos from './DesafiosUseState/HomeProdutos'
 import HomeEffect from './DesafioUseEffect/HomeEffect'
 import HomePokemon from './BatalhaPokemon/HomePokemon.jsx'
 import ErrorPage from './components/ErrorPage'
+import ProdutoDinamicRouter from './components/ProdutoDinamicRouter'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.render(
             <Route path="state" element={<HomeProdutos />} />
             <Route path="componentes" element={<Produtos />} />
             <Route path="sobre" element={<Produto /> }/>
+            <Route path="produto/:nome" element={<ProdutoDinamicRouter />} />
             <Route path="*" element={<ErrorPage /> }/>  {/* error page  */}
           </Routes>
       </StorageGlobal>
