@@ -1,6 +1,5 @@
 import React from 'react'
-import Home from './Home.jsx'
-import Header from '../components/Header'
+
 import './Pokedex.css'
 
 
@@ -16,13 +15,11 @@ const InputPesquisa = () => {
  
     return (
       <div>
-        <Header />
         <input
           type="text"
           value={input}
           onChange={({ target }) => setInput(target.value)} 
         />
-        <Home dataPoke={input} />
       </div>
     )
 }

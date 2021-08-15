@@ -1,6 +1,7 @@
 import React from 'react'
 import Pokedex from './Pokedex'
 import './Pokedex.css'
+import InputPesquisa from './InputPesquisa'
 
 const HomePokemon = ({dataPoke}) => {
 
@@ -16,6 +17,8 @@ const HomePokemon = ({dataPoke}) => {
 
   return (
   <>
+  
+      <InputPesquisa />
       <div className="centralCard">
         <button onClick={handleClick}>GERAR</button>
       </div>        

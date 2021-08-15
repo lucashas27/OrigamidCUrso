@@ -12,6 +12,7 @@ const Header = () => {
             <li> <NavLink to="/effect">Desafio useEffect</NavLink> </li>
             <li> <NavLink to="/state">Desafio useState</NavLink> </li>
             <li> <NavLink to="/batalha-pokemon">Batalha Pokemon</NavLink> </li>
+            <li> <NavLink to="/lista-produtos">Lista de Produtos</NavLink> </li>
           </ul>
       </div>
     </div>
